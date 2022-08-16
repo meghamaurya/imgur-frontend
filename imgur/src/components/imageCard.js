@@ -68,7 +68,7 @@ export default function ImageCard(props) {
             {imgData.map((item, index) => {
                 return (
                     <div className="img-card" key={index}>
-                        <img src={item.img} alt='card-image' className="img" />
+                        <img src={item.img} alt='card-pic' className="img" />
                         <div>
                             <h2>{item.title}</h2>
                             <Counter />
