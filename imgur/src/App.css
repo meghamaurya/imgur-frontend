@@ -34,8 +34,14 @@
 .searchbar {
   flex: 1%;
   border-radius: 6px;
+  background-color: rgb(241, 241, 241);
   margin: 0px 20rem;
   font-size: medium;
+}
+
+.searchbar::placeholder {
+  color: black;
+  padding-left: 5px;
 }
 
 .signIn-btn {
@@ -112,7 +118,7 @@ h2 {
 
 .popup-box {
   position: fixed;
-  background: #00000050;
+  background: #00000075;
   width: 100%;
   height: 100vh;
   top: 0;
@@ -121,12 +127,12 @@ h2 {
 
 .box {
   position: relative;
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   height: auto;
   max-height: 70vh;
   margin-top: calc(100vh - 85vh - 20px);
-  background: #fff;
+  background: rgba(230, 232, 236, 0.972);
   border-radius: 4px;
   padding: 20px;
   border: 1px solid #999;
@@ -137,7 +143,7 @@ h2 {
   content: "x";
   cursor: pointer;
   position: fixed;
-  right: calc(15% - 30px);
+  right: calc(20% - 30px);
   top: calc(100vh - 85vh - 33px);
   background: #ededed;
   width: 25px;
@@ -147,4 +153,132 @@ h2 {
   text-align: center;
   border: 1px solid #999;
   font-size: 20px;
+}
+
+.title {
+  font-size: medium;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.signIn {
+  text-align: center;
+  justify-content: center;
+}
+
+.signIn .buttons {
+  display: flex;
+  flex-wrap: center;
+  padding: 15px;
+  margin: 1px 18vw;
+  column-gap: 10px;
+}
+
+.btn {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 7px;
+  background-color: rgba(56, 64, 66, 0.568);
+  border-radius: 5px;
+}
+
+.btn-f {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 7px 24px;
+  background-color: rgba(56, 64, 66, 0.568);
+  border-radius: 5px;
+}
+
+.btn-g {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 7px 17px;
+  background-color: rgba(56, 64, 66, 0.568);
+  border-radius: 5px;
+}
+
+.btn-y {
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 7px 14px;
+  background-color: rgba(56, 64, 66, 0.568);
+  border-radius: 5px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 15vw;
+}
+
+.input-1 {
+  font-size: large;
+  font-weight: bold;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: rgba(56, 64, 66, 0.568);
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.603);
+}
+
+.nextBtn {
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 6px 9px;
+  background-color: mediumslateblue;
+  justify-content: flex-end;
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 9px 20px;
+  margin: 5px 4px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+  margin-right: 7.3rem;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #393741;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #8275b5
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  right: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e67;
 }
